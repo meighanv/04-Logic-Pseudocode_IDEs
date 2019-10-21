@@ -2,13 +2,17 @@
 1.1 What is a program?  
 A set of instructions that execute a complete task
 
-1.2 What is hardware?
+1.2 What is hardware?  
+The physical components of the computer
 
-1.3 List the five major components of a computer system.
+1.3 List the five major components of a computer system.  
+Inpu, Output, CPU, Main Memory, Secondary storage
 
-1.4 What part of the computer actually runs programs?
+1.4 What part of the computer actually runs programs?  
+CPU
 
-1.5 What part of the computer serves as a work area to store a program and its data while the program is running?
+1.5 What part of the computer serves as a work area to store a program and its data while the program is running?  
+Main Memory
 
 1.6 What part of the computer holds data for long periods of time, even when there is no power to the computer?
 
