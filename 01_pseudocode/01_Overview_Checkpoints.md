@@ -31,21 +31,31 @@
 
 1.16 A program has to be copied into what type of memory each time the CPU executes it?
 
-1.17 When a CPU executes the instructions in a program, it is engaged in what process? Fetch, Decode, Execute
+1.17 When a CPU executes the instructions in a program, it is engaged in what process? 
+Fetch, Decode, Execute
 
-1.18 What is assembly language? Lowest human-readable language (1-to-1 line of assembly code to machine instruction)
+1.18 What is assembly language? 
+Lowest human-readable language (1-to-1 line of assembly code to machine instruction)
 
-1.19 What type of programming language allows you to create powerful and complex programs without knowing how the CPU works? High-level languages
+1.19 What type of programming language allows you to create powerful and complex programs without knowing how the CPU works? 
+High-level languages
 
 1.20 Each language has a set of rules that must be strictly followed when writing a program. What is this set of rules called? Syntax
 
-1.21 What do you call a program that translates a high-level language program into a separate machine language program? Compiler
+1.21 What do you call a program that translates a high-level language program into a separate machine language program? 
+Compiler
 
-1.22 What do you call a program that both translates and executes the instructions in a high-level language program? Interpreter
+1.22 What do you call a program that both translates and executes the instructions in a high-level language program? 
+Interpreter
 
-1.23 What type of mistake is usually caused by a misspelled key word, a missing punctuation character, or the incorrect use of an operator? Syntax error
-1.24 What fundamental set of programs controls the internal operations of the computer’s hardware? Operating System
+1.23 What type of mistake is usually caused by a misspelled key word, a missing punctuation character, or the incorrect use of an operator? 
+Syntax error
 
-1.25 What do you call a program that performs a specialized task, such as a virus scanner, a file compression program, or a data backup program? Utility
+1.24 What fundamental set of programs controls the internal operations of the computer’s hardware? 
+Operating System
 
-1.26 Word processing programs, spreadsheet programs, email programs, Web browsers, and game programs belong to what category of software? Application
+1.25 What do you call a program that performs a specialized task, such as a virus scanner, a file compression program, or a data backup program? 
+Utility
+
+1.26 Word processing programs, spreadsheet programs, email programs, Web browsers, and game programs belong to what category of software? 
+Application
