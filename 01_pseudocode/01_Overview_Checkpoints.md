@@ -1,5 +1,5 @@
 # Checkpoint
-1.1 What is a program?
+1.1 What is a program?  
 A set of instructions that execute a complete task
 
 1.2 What is hardware?
