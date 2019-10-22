@@ -36,7 +36,7 @@ Input 1stPrize
 Display "The first prize winner will receive "' 1stPrize
 ```
 **Errors:**  
-**There must be a placeholder variable inside the last display statement**  
+**The first character in 1stprize is a number**  
 **The extra single quote must be replaced with a comma**  
 
 ---
@@ -58,7 +58,7 @@ Display "The average is ", average, "."
 ```
 **Errors:**  
 **The variables used in the assignment of 'average' do not exist**  
-**There should be a placeholder variable inside the quotes along with the period. There is no need to have the period and comma outside after average**  
+**The assignment of average needs to account for order of ops**  
 
 ---
 
@@ -108,6 +108,7 @@ Set 3.14159265 = pi
 Display "The value of pi is ". pi
 ```
 **Errors:**  
+**Values like pi should be constants**  
 **The variable must be first in the assignment statment**  
 **The period in the final Display statement should be a comma**  
 
@@ -116,8 +117,8 @@ Display "The value of pi is ". pi
 * Find the error in the following pseudocode.
 
 ```
-Constant Real GRAVITY = 9.81
-Display "Rates of acceleration of an objet in free fall:"
+Constant Real GRAVITY = 9.81 //proper form to define a constant
+Display "Rates of acceleration of an object in free fall:"
 Display "Earth: ", GRAVITY, " meters per second every second."
 Set GRAVITY = 1.63
 Display "Moon: ", GRAVITY, " meters per second every second."
