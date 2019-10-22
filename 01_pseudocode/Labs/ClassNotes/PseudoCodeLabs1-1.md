@@ -9,6 +9,6 @@ Display "What was your major in college?"
 input major  
   
 Display "Name: $", name  
-Display "Address: $", address
+Display "Address: $", address  
 Display "Phone: $", phoneNum  
 Display "College Major: $", major  
