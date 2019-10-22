@@ -35,6 +35,9 @@ Input 1stPrize
 
 Display "The first prize winner will receive "' 1stPrize
 ```
+**Errors:**  
+**There must be a placeholder variable inside the last display statement**  
+**The extra single quote must be replaced with a comma**  
 
 ---
 
@@ -53,6 +56,9 @@ Set average = low + high/2
 Display "The average is ", average, "."
 
 ```
+**Errors:**  
+**The variables used in the assignment of 'average' do not exist**  
+**There should be a placeholder variable inside the quotes along with the period. There is no need to have the period and comma outside after average**  
 
 ---
 
@@ -64,6 +70,9 @@ Input length
 Declare Integer length
 
 ```
+**Errors:**  
+**redeclaring 'length' may have the unintended consequence of clearing the variable**  
+  
 
 ---
 
@@ -85,6 +94,9 @@ Input value3
 Display "The sum of numbers is ", sum
 
 ```
+**Errors:**  
+**The sum should not be set prior to all of the other values**  
+  
 
 ---
 
@@ -95,6 +107,9 @@ Declare Real pi
 Set 3.14159265 = pi
 Display "The value of pi is ". pi
 ```
+**Errors:**  
+**The variable must be first in the assignment statment**  
+**The period in the final Display statement should be a comma**  
 
 ---
 
@@ -107,6 +122,9 @@ Display "Earth: ", GRAVITY, " meters per second every second."
 Set GRAVITY = 1.63
 Display "Moon: ", GRAVITY, " meters per second every second."
 ```
+**Errors:**  
+**There should be two different constants for gravity or gravity should not be set as a constant**  
+  
 
 ---
 
