@@ -9,4 +9,7 @@ set distance = speed * time
 Display "The distance the car will travel in $ hours is $", time, distance  
 set time = 12  
 set distance = speed * time  
-Display "The distance the car will travel in $ hours is $", time, distance  
+Display "The distance the car will travel in $ hours is $", time, distance 
+
+
+change
