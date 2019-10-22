@@ -4,5 +4,5 @@
 start  
    input rent  
    costPerDay = rent / 31 //month is assumed to be a 30 day period  
-   output rent  
+   output rent  //output should be costPerDay  
 stop  
