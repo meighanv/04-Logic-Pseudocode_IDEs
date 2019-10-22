@@ -306,7 +306,58 @@ For each of the following Boolean expressions, decide whether the statement is t
 * ShoppingBay is an online auction service that requires several reports. Data for each auctioned item includes an ID number, item description, length of auction in days, and minimum required bid. Design a flowchart or pseudocode for the following: 
 
   * A program that accepts data for one auctioned item. Display data for an auction only if the minimum required bid is more than $250.00. 
-  * A program that continuously accepts auction item data until a sentinel value is entered and displays all data for auctions in which the minimum required bid is more than $300.00. 
+```
+module main()
+  Declare integer itemID 
+  Declare string itemDesc
+  Declare integer auctionLength
+  Declare float minimumBid
+  getItemData()
+  filterItem()
+return
+
+module getItemData()
+  itemID=item.itemID
+  itemDesc=item.description
+  auctionLength = item.auctionlength
+  minimumbid = item.minimumbid
+return
+
+module filterItem()
+  if minimumbid > 250 then 
+    Display "ItemID: $", itemID
+    Display "Description: $", itemDesc
+    Display "Auction Length: $", auctionLength
+    Display "Minimum Bid: $", minimiumBid
+    else
+      Break
+  endif
+return
+```
+  * A program that continuously accepts auction item data until a sentinel value is entered and displays all data for auctions in which the minimum required bid is more than $300.00.
+```
+module main()
+  Declare integer itemID 
+  Declare string itemDesc
+  Declare integer auctionLength
+  Declare float minimumBid
+  Constant float MIN_BID = 300
+  getItemData()
+endmodule
+
+module getItemData()
+  Constant string SENTINEL = "EXIT" 
+  while itemID != SENTINEL do
+    Display "Enter Item ID:"
+    input itemID
+    Display "Enter Item Description:"
+    input itemDesc
+    Display "Enter Auction Length:"
+    input auctionLength
+    Display "Enter Minimum Bid:"
+    input minimumBid
+  
+``` 
   * A program that continuously accepts auction item data and displays data for every auction in which there are no bids yet (in other words, the minimum bid is $0.00) and the length of the auction is seven days or less. 
   * A program that continuously accepts auction data and displays data for every auction in which the length is between 14 and 28 days inclusive. 
   * A program that prompts the user for a maximum required bid, and then continuously accepts auction data and displays data for every auction in which the minimum bid is less than or equal to the amount entered by the user.
