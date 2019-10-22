@@ -1,4 +1,4 @@
-//Total Purchase  
+# Total Purchase  
 Display "Enter price for item 1"  
 input price1  
 Display "Enter price for item 2"  
@@ -13,4 +13,3 @@ set SALES_TAX = 0.06
 set subtotal = price1 + price2 + price3 + price4 + price5  
 set total = subtotal + (subtotal * SALES_TAX)  
   
-//eof

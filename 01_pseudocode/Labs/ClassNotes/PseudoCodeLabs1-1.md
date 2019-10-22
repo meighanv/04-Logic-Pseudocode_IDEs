@@ -1,7 +1,14 @@
-//Sales Prediction  
-Display "Provide projected sales"  
-input projSales  
-set profitMargin = 0.23  
-set profit = projSales * profitMargin  
-Display "Your projected profit margin is $", profit  
-//eof  
+# Personal Information  
+Display "What is your name?"  
+input name  
+Display "What is your address?"  
+input address  
+Display "What is your phone number?"  
+input phoneNumb  
+Display "What was your major in college?"  
+input major  
+  
+Display "Name: $", name  
+Display "Address: $", address
+Display "Phone: $", phoneNum  
+Display "College Major: $", major  
