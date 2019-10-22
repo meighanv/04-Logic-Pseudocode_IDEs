@@ -205,9 +205,96 @@ Assume that you have created a mechanical arm that can hold a pen. The arm can p
   * short word (for example, *cat*) 
   * four-digit number
 
+**string of 3 beads**
+```
+module main()
+   lowerPen()
+   call drawBeadString()
+end module
+
+module drawBeadString()
+   count = 0
+   while count < 4 do
+      movePen()
+      drawCircle()
+      raisePen()
+      movePen()
+      lowerPen()
+      count += 1
+   movePen
+end module
+
+```  
+**Draw Square**
+```
+module main()
+   lowerPen
+   call drawSquare()
+end module
+
+module drawSquare()
+   count = 0
+   while count < 4 do
+      movePen()
+      rotate()
+      count += 1
+end module
+```  
+
+**Draw Rectangle**
+```
+module main()
+   lowerPen()
+   drawRectangle()
+   raisePen
+end module
+
+module drawrectangle()
+   movePen()
+   rotate()
+   movePen()
+   movePen()
+   rotate()
+   movePen()
+   rotate()
+   movePen()
+   movePen()
+end module
+```  
+
 ---
 
 * Draw a structured flowchart or write pseudocode that describes the process Of guessing a number between 1 and 100. After each guess, the player is told that the guess is too high or too low. The process continues until the player guesses the correct number. Pick a number and have a fellow student try to guess it by following your instructions.
+
+**Number guessing**
+```
+module main()
+   randomNum = random(1-100)
+   guessNum()
+   Display "The answer is ", answer 
+end module
+
+module guessNum()
+   Display "Provide a number 1-100 (recommend 50) :"
+   guess = 50
+   min = 1
+   max = 100
+   input num
+   if guess < randomNum then
+      Display "Number $ too low!", guess
+      min = guess 
+      guess = guess + ((max - min)/2)
+   elseif
+      guess < randomNum then
+      Display "Number $ too high!", guess
+      max = guess 
+      guess = guess - ((max - min)/2)
+   else
+      answer = guess
+   endif
+   return answer
+
+```  
  
 * Draw a structured flowchart or write structured pseudocode describing how to get from your home to your school. Include at least two decisions and two loops. 
 
