@@ -8,7 +8,7 @@
 * Design the logic for a program for each of the requirements below that:
   * Outputs every number from 1 through 15 along with its value times 10 and times 100 
   * Outputs numbers in reverse order from 10 down to 0 
-  * Allows a user to continuously enter numbers until the user enters 0. Display the sum of the numbers entered
+  * Allows a user to continuously enter numbers until the user enters 0. Display the sum of the numbers entere
 
 * Design an application for Bob's E-Z Loans. The application accepts a client's loan amount and monthly payment amount. Output the customer's loan balance each month until the loan is paid off. 
 
