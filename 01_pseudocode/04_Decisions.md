@@ -363,43 +363,45 @@ module getItemData(item)
   * A program that continuously accepts auction item data and displays data for every auction in which there are no bids yet (in other words, the minimum bid is $0.00) and the length of the auction is seven days or less. 
 ```
 module main ()
+  //Declarations
+  declare integer itemid
+  declare string desc
+  declare integer days
+  declare real minReqBid
+  declare string filtered
+  constant real MIN_BID = 0.00
+  constant int MAX_DAYS = 7
+  constant int SENTINEL = -1
+  getItemData()
+  displayFiltered()
 endmodule
 
-public class item
-{
-  //instance vars
-  private integer id
-  private string desc
-  private integer auctionLen
-  private real minBid
+module getItemData ()
+  while true
+    Display "Enter Item ID:"
+    input itemid
+    if itemid == SENTINEL then
+      break
+      else
+        continue
+    endif
+    Display "Enter Item Description:"
+    input desc
+    Display "Enter Auction Length:"
+    input days
+    Display "Enter Minimum Bid:"
+    input minReqBid
+    if minReqBid == MIN_BID AND days <= MAX_DAYS then
+      filtered += "$, $, $, $ \n", itemid, desc, days, minReqBid
+      else
+        continue
+    endif
+endmodule
 
-  //default item constructor
-  public item()
-  {
-    id = 0
-    desc = "None"
-    auctionLen = 0
-    minbid = 0.00
-  }
+module displayFiltered()
+  Display filtered
+endmodule
 
-  //Mutator Methods
-  public void setId(string id)
-  {
-    this.id=id
-  }
-  public void setDesc(string desc)
-  {
-    this.desc=desc
-  }
-  public void setAuctionLen(string auctionLen)
-  {
-    this.auctionLen=auctionLen
-  }
-  public void setMinBid(string minBid)
-  {
-    this.minBid=minBid
-  }
-}
 ```
   * A program that continuously accepts auction data and displays data for every auction in which the length is between 14 and 28 days inclusive. 
   * A program that prompts the user for a maximum required bid, and then continuously accepts auction data and displays data for every auction in which the minimum bid is less than or equal to the amount entered by the user.
