@@ -77,4 +77,8 @@ The 100, 200, or 300?
 ## 500 [Enter] 
 Invalid model number
  NOTE:
+<<<<<<< HEAD
 The details of writing a case structure differ from one language to another. Because of the specific rules that each language uses for writing case structures, you might not be able to use the case structure for every multiple alternative decision. In such an event, you can use the If-Then-Else If statement or a nested decision structure.
+=======
+The details of writing a case structure differ from one language to another. Because of the specific rules that each language uses for writing case structures, you might not be able to use the case structure for every multiple alternative decision. In such an event, you can use the If-Then-Else If statement or a nested decision structure.
+>>>>>>> upstream/master

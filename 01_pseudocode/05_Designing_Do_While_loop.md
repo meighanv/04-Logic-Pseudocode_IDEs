@@ -66,4 +66,8 @@ Figure 5-9 Flowchart for Program 5-6
 This program has two modules: main, which executes when the program runs, and showRetail, which calculates and displays an item’s retail price. In the main module, a Do-While loop appears in lines 5 through 12. In line 7, the loop calls the showRetail module. Then, in line 10 the user is prompted “Do you have another item? (Enter y for yes.)” In line 11, the user’s input is stored in the doAnother variable. In line 12, the following statement is the end of the Do-While loop:
 
 While doAnother == "y" OR doAnother == "Y"
+<<<<<<< HEAD
 Notice that we are using the logical OR operator to test a compound Boolean expression. The expression on the left side of the OR operator will be true if doAnother is equal to lowercase "y". The expression on the right side of the OR operator will be true if doAnother is equal to uppercase "Y". If either of these subexpressions is true, the loop will iterate. This is a simple way to make a case insensitive comparison, which means that it does not matter whether the user enters uppercase or lowercase letters.
+=======
+Notice that we are using the logical OR operator to test a compound Boolean expression. The expression on the left side of the OR operator will be true if doAnother is equal to lowercase "y". The expression on the right side of the OR operator will be true if doAnother is equal to uppercase "Y". If either of these subexpressions is true, the loop will iterate. This is a simple way to make a case insensitive comparison, which means that it does not matter whether the user enters uppercase or lowercase letters.
+>>>>>>> upstream/master

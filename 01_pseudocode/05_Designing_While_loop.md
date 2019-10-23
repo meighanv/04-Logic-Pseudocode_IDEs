@@ -66,3 +66,7 @@ Check it again in 15 minutes.
 
 ![image](https://user-images.githubusercontent.com/47218880/67348399-6c7b2a80-f50a-11e9-9567-94f49ae460da.png)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master

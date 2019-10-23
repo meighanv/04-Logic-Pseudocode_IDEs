@@ -90,4 +90,8 @@ Design a program that asks the user to enter a year, and then displays a message
 
 * If the year is evenly divisible by 100 and is also evenly divisible by 400, then it is a leap year. For example, 2000 is a leap year but 2010 is not.
 
+<<<<<<< HEAD
 * If the year is not evenly divisible by 100, but it is evenly divisible by 4, it is a leap year. For example, 2008 is a leap year but 2009 is not.
+=======
+* If the year is not evenly divisible by 100, but it is evenly divisible by 4, it is a leap year. For example, 2008 is a leap year but 2009 is not.
+>>>>>>> upstream/master

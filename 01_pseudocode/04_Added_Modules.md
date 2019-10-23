@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master
 # Defining and Calling Modules
 
 Professional Appliance Service, Inc. offers maintenance and repair services for household appliances. The owner wants to give each of the company’s service technicians a small handheld computer that displays step-by-step instructions for many of the repairs that they perform. To see how this might work, the owner has asked you to develop a program that displays the following instructions for disassembling an ACME laundry dryer:
@@ -141,4 +145,11 @@ Figure 3-9 Flowchart for the main module in Program 3-2
 Figure 3-10 Flowcharts for the other modules in Program 3-2
 
  NOTE:
+<<<<<<< HEAD
 Lines 5, 10, 15, and 20 show an Input statement with no variable specified. In our pseudocode, this is the way we will read a keystroke from the keyboard without saving the character that was pressed. Most programming languages provide a way to do this.
+=======
+Lines 5, 10, 15, and 20 show an Input statement with no variable specified. In our pseudocode, this is the way we will read a keystroke from the keyboard without saving the character that was pressed. Most programming languages provide a way to do this.
+
+
+
+>>>>>>> upstream/master
