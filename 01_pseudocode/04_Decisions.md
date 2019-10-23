@@ -382,8 +382,6 @@ module getItemData ()
     input itemid
     if itemid == SENTINEL then
       break
-      else
-        continue
     endif
     Display "Enter Item Description:"
     input desc
@@ -393,8 +391,6 @@ module getItemData ()
     input minReqBid
     if minReqBid == MIN_BID AND days <= MAX_DAYS then
       filtered += "$, $, $, $ \n", itemid, desc, days, minReqBid
-      else
-        continue
     endif
 endmodule
 
