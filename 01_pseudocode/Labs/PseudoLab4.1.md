@@ -87,13 +87,13 @@ endmodule()
 
 Many financial experts advise that property owners should insure their homes or buildings for at least 80 percent of the amount it would cost to replace the structure. Design a modular program that asks the user to enter the replacement cost of a building and then displays the minimum amount of insurance he or she should buy for the property.
 ```
+//Declarations
+Declare real bldgCost
+Declare real minInsurance
+Constant real MIN_COV_PERC = 0.8
 module main()
-    //Declarations
-    Declare real bldgCost
-    Declare real minInsurance
-    Constant real MIN_COVPERC = 0.8
     getCost()
-    calcInsurance()
+    calcInsurance(bldgcost)
     Display "The minimum insurance coverage will be for the value of $", minInsurance
 endmodule
 
@@ -103,7 +103,7 @@ module getCost()
 endmodule
 
 module calcInsurance()
-    minInsurance = bldgCost * MIN_COVPERC    
+    minInsurance = bldgCost * MIN_COV_PERC    
 endmodule
 
 ```
