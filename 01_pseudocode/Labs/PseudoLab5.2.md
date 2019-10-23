@@ -3,16 +3,50 @@
 # Bug Collector
 
 A bug collector collects bugs every day for seven days. Design a program that keeps a running total of the number of bugs collected during the seven days. The loop should ask for the number of bugs collected for each day, and when the loop is finished, the program should display the total number of bugs collected.
-
+```
+declare integer bugTotal = 0
+declare integer bugCount
+for days=0; days<8; days++
+    Display "How many bugs did you collect today?"
+    input bugCount
+    set bugTotal += bugCount
+endfor
+Display "Total bugs collected this week is: $" bugTotal
+```
 
 
 # Calories Burned
 
 Running on a particular treadmill you burn 3.9 calories per minute. Design a program that uses a loop to display the number of calories burned after 10, 15, 20, 25, and 30 minutes.
 
+```
+declare real calBurned
+constant real CAL_PER_MIN
+for minutes=10;minutes<=30;minutes+=5
+    calBurned = minutes * CAL_PER_MIN
+    Display "Exercise time: $ minutes...", minutes
+    Display "Calories burned: $ calories", calBurned
+endfor
+```
+
 # Budget Analysis
 
 Design a program that asks the user to enter the amount that he or she has budgeted for a month. A loop should then prompt the user to enter each of his or her expenses for the month, and keep a running total. When the loop finishes, the program should display the amount that the user is over or under budget.
+
+declare real budget
+declare real expense
+declare real expTotal
+declare real delta
+Display "Please provide your budget total (monthly)"
+input budget
+Do
+    Display "Please provide an expense cost. Type '0.00' to complete entries."
+    input expense
+    set expTotal += expense 
+while expense != 0.00
+delta = budget - expense
+Display "You have $ room in your budget", delta
+
 
 # Sum of Numbers
 
