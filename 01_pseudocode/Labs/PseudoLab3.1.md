@@ -1,5 +1,4 @@
 1. Design an If-Then statement (or a flowchart with a single alternative decision structure) that assigns 20 to the variable y and assigns 40 to the variable z if the variable x is greater than 100.
-<<<<<<< HEAD
 ```
 if x > 100 then 
    y = 20
@@ -20,12 +19,6 @@ if a < 10 then
 else
    b = 99
 ```
-=======
-
-2. Design an If-Then statement (or a flowchart with a single alternative decision structure) that assigns 0 to the variable b and assigns 1 to the variable c if the variable a is less than 10.
-
-3. Design an If-Then-Else statement (or a flowchart with a dual alternative decision structure) that assigns 0 to the variable b if the variable a is less than 10. Otherwise, it should assign 99 to the variable b.
->>>>>>> upstream/master
 
 4. The following pseudocode contains several nested If-Then-Else statements. Unfortunately, it was written without proper alignment and indentation. Rewrite the code and use the proper conventions of alignment and indentation.
 ```

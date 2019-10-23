@@ -38,8 +38,4 @@ After thinking about this table of values, you decide that you will write a For 
 
 Figure 5-16 Flowchart for Program 5-11
 
-<<<<<<< HEAD
 Notice that a variable named kph is used as the counter. Until now we have used the name counter for our counter variables. In this program, however, kph is a better name for the counter because it will hold speeds in kilometers-per-hour.
-=======
-Notice that a variable named kph is used as the counter. Until now we have used the name counter for our counter variables. In this program, however, kph is a better name for the counter because it will hold speeds in kilometers-per-hour.
->>>>>>> upstream/master

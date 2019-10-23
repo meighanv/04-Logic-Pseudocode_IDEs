@@ -11,6 +11,39 @@ Design a program that prompts the user to enter a number within the range of 1 t
 
 The area of a rectangle is the rectangle’s length times its width. Design a program that asks for the length and width of two rectangles. The program should tell the user which rectangle has the greater area, or whether the areas are the same.
 
+module main()
+    //Declartions
+    declare real length
+    declare real width
+    declare real area1
+    declare real area2
+    area1 = calcArea()
+    area2 = calcArea()
+    compareArea()
+endmodule
+
+module calcArea()
+    Display "Provide length of rectangle:"
+    input length
+    Display "Provide width of rectangle:"
+    input width
+    result = length * width
+return result
+endmodule
+
+module compareArea()
+    if area1 > area2 then
+        Display "The area of first rectangle is greater than the area of second"
+        else
+            if area2 == area1 then
+                Display "The area of first rectangle is equal to the area of second"
+                else
+                    if area2 > area1 then
+                        Display "The area of first rectangle is less than the area of second"
+                    endif
+            endif
+    endif
+    
 # Mass and Weight
 
 Scientists measure an object’s mass in kilograms and its weight in Newtons. If you know the amount of mass of an object, you can calculate its weight, in Newtons, with the following formula:
@@ -90,8 +123,4 @@ Design a program that asks the user to enter a year, and then displays a message
 
 * If the year is evenly divisible by 100 and is also evenly divisible by 400, then it is a leap year. For example, 2000 is a leap year but 2010 is not.
 
-<<<<<<< HEAD
 * If the year is not evenly divisible by 100, but it is evenly divisible by 4, it is a leap year. For example, 2008 is a leap year but 2009 is not.
-=======
-* If the year is not evenly divisible by 100, but it is evenly divisible by 4, it is a leap year. For example, 2008 is a leap year but 2009 is not.
->>>>>>> upstream/master

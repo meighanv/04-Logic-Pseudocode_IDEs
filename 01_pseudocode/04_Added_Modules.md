@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> upstream/master
 # Defining and Calling Modules
 
 Professional Appliance Service, Inc. offers maintenance and repair services for household appliances. The owner wants to give each of the company’s service technicians a small handheld computer that displays step-by-step instructions for many of the repairs that they perform. To see how this might work, the owner has asked you to develop a program that displays the following instructions for disassembling an ACME laundry dryer:

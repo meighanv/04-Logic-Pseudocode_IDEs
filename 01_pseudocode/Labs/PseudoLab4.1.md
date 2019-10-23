@@ -5,7 +5,6 @@ Design a modular program that asks the user to enter a distance in kilometers, a
 
 ![image](https://user-images.githubusercontent.com/47218880/67329523-99b2e300-f4e0-11e9-8a30-3f31fbd76ae1.png)
 
-<<<<<<< HEAD
 ```
 module main()
     declare real km //kilometers variable
@@ -26,13 +25,10 @@ module displayResult()
 endmodule
 ```
 
-=======
->>>>>>> upstream/master
 ## Sales Tax Program Refactoring (Mandatory)
 
 See program below,  the Sales Tax program. This program calculates and displays the county and state sales tax on a purchase. Refactor it so the subtasks are in modules.
 ```
-<<<<<<< HEAD
 module main()
     // Variable declarations
     Declare Real purchase, stateTax, countyTax, totalTax, totalSale
@@ -82,37 +78,6 @@ module displaySale()
     Display "Total Tax: ", totalTax
     Display "Sale total: ", totalSale
 endmodule()
-=======
-// Variable declarations
-Declare Real purchase, stateTax, countyTax, totalTax, totalSale
-
-// Constants for the state and county tax rates
-Constant Real STATE_TAX_RATE = 0.04
-Constant Real COUNTY_TAX_RATE = 0.02
-
-// Get the amount of the purchase.
-Display "Enter the amount of the purchase."
-Input purchase
-
-// Calculate the state sales tax.
-Set stateTax = purchase * STATE_TAX_RATE
-
-// Calculate the county sales tax.
-Set countyTax = purchase * COUNTY_TAX_RATE
-
-// Calculate the total tax.
-Set totalTax = stateTax + countyTax
-
-// Calculate the total of the sale.
-Set totalSale = purchase + totalTax
-
-// Display information about the sale.
-Display "Purchase Amount: $", purchase
-Display "State Tax: ", stateTax
-Display "County Tax: ", countyTax
-Display "Total Tax: ", totalTax
-Display "Sale total: ", totalSale
->>>>>>> upstream/master
 ```
  
 
@@ -121,7 +86,6 @@ Display "Sale total: ", totalSale
 ## How Much Insurance?
 
 Many financial experts advise that property owners should insure their homes or buildings for at least 80 percent of the amount it would cost to replace the structure. Design a modular program that asks the user to enter the replacement cost of a building and then displays the minimum amount of insurance he or she should buy for the property.
-<<<<<<< HEAD
 ```
 module main()
     //Declarations
@@ -143,8 +107,6 @@ module calcInsurance()
 endmodule
 
 ```
-=======
->>>>>>> upstream/master
 
 ## Automobile Costs
 
