@@ -377,7 +377,7 @@ module main ()
 endmodule
 
 module getItemData ()
-  while true
+  while true do 
     Display "Enter Item ID:"
     input itemid
     if itemid == SENTINEL then
