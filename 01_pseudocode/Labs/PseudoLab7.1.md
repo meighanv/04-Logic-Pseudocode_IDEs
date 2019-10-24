@@ -8,10 +8,40 @@ The area of a rectangle is calculated according to the following formula:
 
 Design a function that accepts a rectangle’s width and length as arguments and returns the rectangle’s area. Use the function in a program that prompts the user to enter the rectangle’s width and length, and then displays the rectangle’s area.
 
+```
+function real area(length,width)
+  declare real area
+  area = length * width
+  return area
+endFunction
+```
+
 ## Feet to Inches
 
 One foot equals 12 inches. Design a function named feetToInches that accepts a number of feet as an argument, and returns the number of inches in that many feet. Use the function in a program that prompts the user to enter a number of feet and then displays the number of inches in that many feet.
 
+```
+//Vern's Program
+module main()
+  declare real feet
+  declare real result
+  convertInput
+
+module convertInput ()
+  Display "Provide a number of feet to convert to inches:"
+  input feet
+  result = feetToInches(feet)
+  Display "There are $ inches in $ feet.", result, feet
+endModule
+
+//Vern's Function
+function real feetToInches(feet)
+  declare real inches
+  constant real INCHES_PER_FOOT = 12
+  inches = feet * INCHES_PER_FOOT
+  return inches
+endFunction 
+```
 ## Math Quiz
 
 Design a program that gives simple math quizzes. The program should display two random numbers that are to be added, such as:
@@ -19,11 +49,47 @@ Design a program that gives simple math quizzes. The program should display two 
   247
 + 129
 ```
-The program should allow the student to enter the answer. If the answer is correct, a message of congratulations should be displayed. If the answer is incorrect, a message showing the correct answer should be displayed.
 
+The program should allow the student to enter the answer. If the answer is correct, a message of congratulations should be displayed. If the answer is incorrect, a message showing the correct answer should be displayed.
+```
+//Vern's Solution
+module main()
+Declare integer num1 = random(1,1000)
+Declare integer num2 = random(1,1000)
+Declare integer userInput
+Declare integer answer
+set answer = writeProblem(num1,num2)
+set userInput = getUserAns()
+checkAnswer(userInput,answer)  
+endModule
+
+function integer writeProblem(a, b)
+  Declare integer answer
+  Display "\t$\n+\t$\n-------\n", a, b
+  set answer = a + b
+  return answer
+endFunction
+
+function getUserAns()
+  Declare integer userAns
+  Display "What is the answer to the math problem?" 
+  input unerAns
+  return userAns
+endFunction
+
+function checkAnswer(userAnswer,correctAnswer)
+  if userAnswer == correctAnswer then
+    Display "Congratulations! Your answer is correct!"
+    else 
+      Display "Incorrect! The answer is $",correctAnswer
+  endif
+endFunction
+```
 ## Maximum of Two Values
 
 Design a function named max that accepts two integer values as arguments and returns the value that is the greater of the two. For example, if 7 and 12 are passed as arguments to the function, the function should return 12. Use the function in a program that prompts the user to enter two integer values. The program should display the value that is the greater of the two.
+
+
 
 ## Falling Distance
 

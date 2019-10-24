@@ -207,3 +207,41 @@ Enter the length of side B.
 12.0 [Enter]
 The length of the hypotenuse is 13
 ```
+# Exercise Workbench Day 4 Functions
+1. 
+```
+set rand = random(1,100)
+```
+2. 
+```
+function half (number)
+    declare real result
+    set result = number/2
+    return result
+endFunction
+```
+3. 
+```
+set result = cube(4)
+```
+4. 
+```
+function timesTen (integer num)
+    return num*10
+endfunction
+```
+5. 
+```
+function getFirstName()
+    Declare string name
+    Display "Enter your first name:"
+    input name
+    return name
+endfunction
+```
+6. 
+```
+set str1 = toUpper(str1)
+set str2 = toUpper(str2)
+```
+
