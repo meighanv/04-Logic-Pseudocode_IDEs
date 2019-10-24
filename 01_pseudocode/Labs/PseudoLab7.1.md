@@ -88,8 +88,33 @@ endFunction
 ## Maximum of Two Values
 
 Design a function named max that accepts two integer values as arguments and returns the value that is the greater of the two. For example, if 7 and 12 are passed as arguments to the function, the function should return 12. Use the function in a program that prompts the user to enter two integer values. The program should display the value that is the greater of the two.
+```
+module main()
+  declare integer num1, num2
+  declare integer maximum
+  getInput()
+  set maximum = max(num1,num2)
+  Display "The maximum value in this set of two variable is $", maximum
 
+module getInput()
+  Display "Please enter a number:"
+  input num1
+  Display "Please enter a second number:"
+  input num2
+endmodule
 
+function integer max(integer a,b)
+  declare max
+  if a >= b then
+    set max = a
+    else 
+      if b >= a then
+        set max = b
+      endif
+  endif
+  return max
+endfunction
+```
 
 ## Falling Distance
 
@@ -100,7 +125,25 @@ When an object is falling because of gravity, the following formula can be used 
 The variables in the formula are as follows: d is the distance in meters, g is 9.8, and t is the amount of time, in seconds, that the object has been falling.
 
 Design a function named fallingDistance that accepts an object’s falling time (in seconds) as an argument. The function should return the distance, in meters, that the object has fallen during that time interval. Design a program that calls the function in a loop that passes the values 1 through 10 as arguments and displays the return value.
+```
+module main()
+  declare real distance //in meters
+  declare real time //in seconds
 
+for i=0 to 10 step 1
+  distance = fallingDistance(i)
+  Display "Distance fallen after $ seconds is $", i, distance
+endFor
+endmodule
+
+function fallingDistance(time)
+  declare real d
+  constant real GRAVITY = 9.8
+  constant real COEFF = 0.5 /Coefficient used in calculating falling distance
+  return d = COEFF*GRAVITY*(time^2)
+endFunction
+
+```
 ## Kinetic Energy
 
 In physics, an object that is in motion is said to have kinetic energy. The following formula can be used to determine a moving object’s kinetic energy:
