@@ -33,6 +33,40 @@ The speed limit should be at least 20, but not greater than 70.
 
 The driver’s speed should be at least the value entered for the speed limit ­(otherwise the driver was not speeding).
 Once correct data has been entered, the program should calculate and display the number of miles per hour over the speed limit that the driver was doing.
+```
+module main()
+	declare integer speed 
+	declare integer limit 
+	declare integer excess
+	limit = getLimit()
+	speed = getSpeed(limit)
+	excess = getExcess(speed, limit)
+	Display "You were going $ MPH over the $ MPH speed limit", excess, limit
+endmodule
+
+function getLimit()
+	declare integer limit = 0
+	while limit <= 20 OR limit >= 70
+		Display "What was the speed limit?"
+		input limit
+	endWhile
+	return limit
+endFunction
+
+function integer getSpeed(limit)
+	declare integer speed = 0
+	while speed <= limit
+		Display "How fast were you going?"
+		input limit
+	endWhile
+	return speed
+endFunction
+
+function excess(speed,limit)
+	return speed - limit
+endFunction 
+
+```
 
 # Rock, Paper, Scissors Modification (MANDATORY)
 
@@ -46,23 +80,44 @@ In a previous Programming Exercise option you were asked to design a program tha
 Module main()
 // Local variables
 Declare Integer computer, player
+Declare string selection
 
 // Get computer number
 Set computer = Rand(1, 3)
 
-// Get player number
-Call getNumber(player)
+// Get player Selection
+Call getSelection(selection)
+set player = Call convertSelection(selection)
 
 // Show winner
 Call showWinner(computer, player)
 
 End Module
 
-// The getNumber module gets an integer
-Module getNumber(Integer Ref inputAnswer)
-		Display “Enter 1 for rock, 2 for paper, 3 for scissors:  “
-		Input inputAnswer
+// The getSelection module gets a string with input validation for valid choices then it will return the appropriate integer
+Module getSelection(Integer Ref inputAnswer)
+		while toupper(inputAnswer) != 'ROCK' OR toupper(inputAnswer) != 'PAPER' OR toupper(inputAnswer) != 'SCISSORS'
+			Display "Enter 'rock', 'paper', or 'scissors':"
+			Input inputAnswer
+		endwhile
 End Module
+
+//To convert the choice to an integer
+module convertSelection(string inputAnswer)
+	declare integer choice 
+	select inputAnswer
+		case: 'ROCK'
+			set choice = 1
+		case: 'PAPER'
+			set choice = 2
+		case: 'SCISSORS'
+			set choice = 3
+		default:
+			set choice = 1
+	endSelect
+	return choice
+endModule
+
 
 // The showWinner module shows if number is a prime
 Module showWinner(Integer computer, player)

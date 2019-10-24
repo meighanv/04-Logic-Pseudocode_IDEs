@@ -153,6 +153,23 @@ In physics, an object that is in motion is said to have kinetic energy. The foll
 The variables in the formula are as follows: KE is the kinetic energy, m is the ­object’s mass in kilograms, and v is the object’s velocity, in meters per second.
 
 Design a function named kineticEnergy that accepts an object’s mass (in ­kilograms) and velocity (in meters per second) as arguments. The function should return the amount of kinetic energy that the object has. Design a program that asks the user to enter values for mass and velocity, and then calls the kineticEnergy function to get the object’s kinetic energy.
+```
+Constant real COEFF = 0.5
+main module()
+  declare real mass, velocity, ke
+  Display "Enter the object's mass:"
+  input mass
+  Display "Enter the object's velocity:"
+  input velocity
+  ke = kineticEnergy(mass, velocity)
+  Display "The kinetic energy for your object at its current velocity is $", ke
+endModule
+
+function kineticEnergy (m, v)
+  return COEFF*m*(v^2)
+endFunction
+
+```
 
 ## Odd/Even Counter
 

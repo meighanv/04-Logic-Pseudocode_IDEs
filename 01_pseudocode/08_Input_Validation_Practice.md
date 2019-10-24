@@ -1,15 +1,94 @@
 # Input Validation Exercise Workbench
 
 Design an algorithm that prompts the user to enter a positive nonzero number and validates the input.
+```
+module main()
+   declare real num
+   Display "Please enter a positive nonzero number:"
+   input num
+   validPositive(num)
+endModule
+
+function boolean validPositive(x)
+   if x > 0 then
+      return True
+      else
+         return False
+endFunction
+```
 
 Design an algorithm that prompts the user to enter a number in the range of 1 through 100 and validates the input.
+```
+module main()
+   declare real num
+   Display "Please enter a number in the range of 1 through 100:"
+   input num
+   validPositive(num)
+endModule
+
+function boolean validPositive(x)
+   if x >= 1 AND x <= 100 > then
+      return True
+      else
+         return False
+endFunction
+```
 
 Design an algorithm that prompts the user to enter “yes” or “no” and validates the input. (Use a case-insensitive comparison.)
+```
+module main()
+   delcare string response
+   Display "enter 'yes' or 'no':"
+   input response
+   Display validResponse(response)
+endModule
+
+function string validResponse(string response)
+   declare string valid
+   if toupper(response) != 'YES' AND toupper(response) != 'NO' then
+      valid = 'The response was invalid'
+      else
+         valid = 'Thank you!'
+   endif
+   return valid
+endfunction
+```
 
 Design an algorithm that prompts the user to enter a number that is greater than 99 and validates the input.
+```
+module main()
+   declare real num
+   Display "Please enter a number greater than 99:"
+   input num
+   Display valid(num)
+endModule
 
+function boolean valid(x)
+   if x > 99 then
+      return True
+      else
+         return False
+endFunction
+```
 Design an algorithm that prompts the user to enter a secret word. The secret word should be at least 8 characters long. Validate the input.
+```
+module main()
+   delcare string response
+   Display "Enter a secret word. The secret word should be at least 8 characters long. :"
+   input response
+   Display validResponse(response)
+endModule
 
+function string validResponse(string response)
+   declare string valid
+   if length(response) <= 8  then
+      valid = 'The response was invalid'
+      else
+         valid = 'Thank you!'
+   endif
+   return valid
+endfunction
+```
 # Debugging Exercises
 
 Why does the following pseudocode not perform as indicated in the comments?
