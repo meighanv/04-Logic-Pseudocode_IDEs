@@ -241,7 +241,6 @@ endfunction
 ```
 6. 
 ```
-set str1 = toUpper(str1)
-set str2 = toUpper(str2)
+set str2 = toUpper(str1)
 ```
 
