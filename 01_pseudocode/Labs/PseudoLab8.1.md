@@ -24,6 +24,53 @@ Once correct data has been entered, the program should calculate and display the
 ![image](https://user-images.githubusercontent.com/47218880/67504468-0ba93a80-f64f-11e9-85d0-f080ac66a64a.png)
 
 Some nutritionists classify a food as “low fat” if less than 30 percent of its calories come from fat. If the results of this formula are less than 0.3, the program should display a message indicating the food is low in fat.
+```
+declare constant real fatCalsPerG = 9
+module main()
+	declare real fatGrams
+	declare real calories
+	declare real fatPerc
+	declare real fatCals
+	calories = getCalories()
+	fatGrams = getFat(calories)
+	fatCals = calsFromFat(fatGrams)
+	fatPerc = calsFatPerc(fatCals,calories)
+	fatQuality(fatPerc)
+endmodule
+
+function real getCalories ()
+	while inputData < 0 
+		Display "Please enter the total calories in the food:"
+		input inputData
+	endwhile
+	return inputData
+endfunction
+
+function real getFat(cals)
+	declare real inputData
+	while inputData * fatCalsPerG < 0 OR inputData * fatCalsPerG > cals do
+		Display "Please enter the total grams of fat in the food:"
+		input inputData
+	endwhile
+	return inputData
+endFunction
+
+function real calsFromFat(fat)
+	return fat * fatCalsPerG
+endFunction
+
+function real calsFatPerc (fat,cals)
+	return fat/cals
+endFunction
+
+Function fatQuality (fatPerc)
+	if fatPerc <= 0.3 then
+		Display "This food is low fat"
+		else
+			Display "This food is not low fat"
+	endif
+endFunction
+```
 
 ## Speeding Violation Calculator
 
@@ -96,9 +143,10 @@ End Module
 
 // The getSelection module gets a string with input validation for valid choices then it will return the appropriate integer
 Module getSelection(Integer Ref inputAnswer)
-		while toupper(inputAnswer) != 'ROCK' OR toupper(inputAnswer) != 'PAPER' OR toupper(inputAnswer) != 'SCISSORS'
+		while inputAnswer != 'ROCK' OR inputAnswer != 'PAPER' OR inputAnswer != 'SCISSORS'
 			Display "Enter 'rock', 'paper', or 'scissors':"
 			Input inputAnswer
+			toupper(inputAnswer)
 		endwhile
 End Module
 
