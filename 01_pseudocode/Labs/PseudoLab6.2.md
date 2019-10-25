@@ -3,14 +3,100 @@
 ## Total Sales
 
 Design a program that asks the user to enter a store’s sales for each day of the week. The amounts should be stored in an array. Use a loop to calculate the total sales for the week and display the result.
+```
+module main ()
+    declare constant integer WK_SIZE = 7
+    declare constant string WEEKDAYS = "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" 
+    declare real sales[WK_SIZE]
+    declare real total = 0
+    for i=0 to WK_SIZE-1
+        Display "Please provide the amount of sales for $:", WEEKDAYS[i]
+        input sales[i]
+        total += sales[i]
+    endFor
+    Display "Sales for this week:"
+    Display '$' total 
+endmodule
+```
 
 ## Lottery Number Generator
 
 Design a program that generates a 7-digit lottery number. The program should have an Integer array with 7 elements. Write a loop that steps through the array, randomly generating a number in the range of 0 through 9 for each element. Then write another loop that displays the contents of the array.
 
+```
+declare constant integer SIZE = 7
+declare integer lotto[SIZE]
+
+for i=0 To SIZE-1
+    lotto[i] = random(0,9)
+endFor
+
+for i=0 To SIZE-1
+    display lotto[i]
+endFor
+```
+
 ## Rainfall Statistics
 
 Design a program that lets the user enter the total rainfall for each of 12 months into an array. The program should calculate and display the total rainfall for the year, the average monthly rainfall, and the months with the highest and lowest amounts.
+```
+declare constant real MONTH_COUNT = 12
+declare constant string MONTHS[MONTH_COUNT] = "JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"
+
+module main()
+    declare real rainFall[MONTH_COUNT]
+    getRain(real ref rainFall)
+    Display "The total rain in was $.", years, sumRain(rainFall)
+    Display "The per month average rainfall was $.", avgRain(rainFall)     
+    Display "The most rainfall was $ in $." rainFall[maxRain(rainFall)], MONTHS[maxRain(rainFall)]
+    Display "The most rainfall was $ in $." rainFall[minRain(rainFall)], MONTHS[minRain(rainFall)]
+endModule
+
+function real getRain(rain)
+    for i=0 to MONTH_COUNT-1
+        Display "Provide the rain fall amount for $ :", MONTHS[i]
+        input rain[i]
+    endfor
+endFunction
+
+function real sumRain(rain)
+    rainTotal = 0
+    for i=0 to MONTH_COUNT-1
+        rainTotal += rain[i]
+    endFor
+    return rainTotal
+endFunction
+
+function real avgRain(rain)
+    rainTotal = 0
+    for i=0 to MONTH_COUNT-1
+        rainTotal += rain[i]
+    endFor
+    return rainTotal/MONTH_COUNT
+endFunction
+
+function real maxRain(rain)
+    maxIndex = 0
+    max = 0
+    for i=0 to MONTH_COUNT-1
+        if rain[i] > max then
+            maxIndex = i
+            max = rain[i] 
+    endFor
+    return maxIndex
+endFunction
+
+function real minRain(rain)
+    maxIndex = 0
+    min = 10000000
+    for i=0 to MONTH_COUNT-1
+        if rain[i] < min then
+            minIndex = i
+            min = rain[i] 
+    endFor
+    return minIndex
+endFunction
+```
 
 ## Number Analysis Program
 
@@ -23,6 +109,62 @@ The highest number in the array
 The total of the numbers in the array
 
 The average of the numbers in the array
+```
+```
+declare constant SIZE = 20
+module main ()
+    declare integer numbers[SIZE]
+    getNums(integer ref numbers)
+    Display "The lowest number is ", min(numbers)
+    Display "The highest number is ", max(numbers)
+    Display "The sum of the array is ", sum(numbers)
+    Display "The average of the array is ", avg(numbers)    
+endModule
+
+function real getNums(num)
+    for i=0 to SIZE-1
+        Display "Provide a whole number :"
+        input num[i]
+    endfor
+endFunction
+
+function real sum(x)
+    total = 0
+    for i=0 to SIZE-1
+        total += x[i]
+    endFor
+    return total
+endFunction
+
+function real avg(x)
+    total = 0
+    for i=0 to SIZE-1
+        total += x[i]
+    endFor
+    return total/SIZE
+endFunction
+
+function real max(x)
+    maxIndex = 0
+    max = 0
+    for i=0 to SIZE-1
+        if x[i] > max then
+            maxIndex = i
+            max = x[i] 
+    endFor
+    return maxIndex
+endFunction
+
+function real min(x)
+    maxIndex = 0
+    min = 10000000
+    for i=0 to SIZE-1
+        if x[i] < min then
+            minIndex = i
+            min = x[i] 
+    endFor
+    return minIndex
+endFunction
 ```
 
 ## Charge Account Validation

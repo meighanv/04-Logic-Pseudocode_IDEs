@@ -37,7 +37,12 @@ ISBN-10: 1-337-10207-5, ISBN-13: 978-1-337-10207-0
 
 **Array elements are contiguous in memory**
 
-**Size of the array: the number of elements it will hold**
+**Size of the array: the number of elements it will hold**  
+//May be worth declaring a constant to use as the size between the brackets like:  
+```
+declare constant integer SIZE = 5
+declare array days[SIZE]
+```
 
 **Subscripts or indexes**
 * Position number of an item in an array starting from 0 to one less than the number of elements in array
